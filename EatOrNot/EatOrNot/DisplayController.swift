@@ -14,14 +14,18 @@ class DisplayController: UIViewController {
     
     override func loadView() {
         super.loadView()
-        let dv = DisplayView()
-        self.view = dv
+        let dv = DisplayView(parentView: self.view)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        hideNavigationBar = true
     }
 
     override func didReceiveMemoryWarning() {

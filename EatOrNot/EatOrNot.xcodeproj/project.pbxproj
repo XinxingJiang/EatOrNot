@@ -16,6 +16,7 @@
 		B79E3DF81C647C5100417013 /* DisplayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79E3DF71C647C5100417013 /* DisplayController.swift */; };
 		B79E3DFA1C647D4B00417013 /* DisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79E3DF91C647D4B00417013 /* DisplayView.swift */; };
 		B79E3DFD1C647DCC00417013 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B79E3DFC1C647DCC00417013 /* Main.storyboard */; };
+		B79E3DFF1C6596F200417013 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79E3DFE1C6596F200417013 /* UIViewControllerExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		B79E3DF71C647C5100417013 /* DisplayController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayController.swift; sourceTree = "<group>"; };
 		B79E3DF91C647D4B00417013 /* DisplayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayView.swift; sourceTree = "<group>"; };
 		B79E3DFC1C647DCC00417013 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		B79E3DFE1C6596F200417013 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 		B79E3DC31C64791700417013 /* EatOrNot */ = {
 			isa = PBXGroup;
 			children = (
+				B79E3E001C6596F800417013 /* Extensions */,
 				B79E3DFB1C647D5400417013 /* Views */,
 				B79E3DF61C64796400417013 /* Controllers */,
 			);
@@ -154,6 +157,14 @@
 				B79E3DF91C647D4B00417013 /* DisplayView.swift */,
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		B79E3E001C6596F800417013 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B79E3DFE1C6596F200417013 /* UIViewControllerExtension.swift */,
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,6 +300,7 @@
 			files = (
 				B79E3DCD1C64791700417013 /* EatOrNot.xcdatamodeld in Sources */,
 				B79E3DFA1C647D4B00417013 /* DisplayView.swift in Sources */,
+				B79E3DFF1C6596F200417013 /* UIViewControllerExtension.swift in Sources */,
 				B79E3DC51C64791700417013 /* AppDelegate.swift in Sources */,
 				B79E3DF81C647C5100417013 /* DisplayController.swift in Sources */,
 			);
