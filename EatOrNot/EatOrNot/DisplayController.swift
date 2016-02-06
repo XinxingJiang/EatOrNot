@@ -10,11 +10,13 @@ import UIKit
 
 class DisplayController: UIViewController {
 
+    var dv: DisplayView!
+    
     // MARK: - VC life cycle
     
     override func loadView() {
         super.loadView()
-        let dv = DisplayView(parentView: self.view)
+        dv = DisplayView(parentView: self.view)
     }
     
     override func viewDidLoad() {
@@ -26,6 +28,10 @@ class DisplayController: UIViewController {
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         hideNavigationBar = true
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
     }
 
     override func didReceiveMemoryWarning() {
